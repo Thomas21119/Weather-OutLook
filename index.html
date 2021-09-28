@@ -26,37 +26,56 @@
     </aside>
     <main class='hidden' id="main"> 
         <div id="selectedCityWeather">
-            <h3 class="cityName">  <span id="cityName"></span></h3>
+            <h3 class="cityName"> <span id="cityName"></span> <img id="wicon" src="" alt="Weather icon"> </h3>
             <p class="cityTemp">Temperature: <span id="cityTemp"></span>°C</p>
             <p class="cityWind">Wind: <span id="cityWind"></span> m/s</p>
             <p class="cityHumidity">Humidity: <span id="cityHumidity"></span>%</p>
+            <p class="cityUv">UV index: <span id="cityUv"></span></p>
+
         </div>
         <h3 id="title">5 Day Forecast</h3>
         <div id="fiveDayForecast">
             <div class="card">
-                <h4 class="date" data-date="1">1</h4>
+                <h4 class="dates" id="date1" data-date="1">1</h4>
+                 <img class="weatherIcon0" src="" alt="Weather icon" width="50%">
+                 <p id="temp0"></p>
+                 <p id="wind0"></p>
+                 <p id="humidity0"></p>
             </div>
             <div class="card">
-                <h4 class="date" data-date="2">2</h4>
-
+                <h4 class="dates" id="date2" data-date="2">2</h4>
+                 <img class="weatherIcon1" src="" alt="Weather icon" width="50%">
+                 <p id="temp1"></p>
+                 <p id="wind1"></p>
+                 <p id="humidity1"></p>
             </div>
             <div class="card">
-                <h4 class="date" data-date="3">3</h4>
-
+                <h4 class="dates" id="date3" data-date="3">3</h4>
+                <img class="weatherIcon2" src="" alt="Weather icon" width="50%">
+                <p id="temp2"></p>
+                <p id="wind2"></p>
+                <p id="humidity2"></p>
             </div>
             <div class="card">
-                <h4 class="date" data-date="4">4</h4>
-
+                <h4 class="dates" id="date4" data-date="4">4</h4>
+                <img class="weatherIcon3" src="" alt="Weather icon" width="50%">
+                <p id="temp3"></p>
+                <p id="wind3"></p>
+                <p id="humidity3"></p>
             </div>
             <div class="card">
-                <h4 class="date" data-date="5">5</h4>
-
+                <h4 class="dates" id="date5" data-date="5">5</h4>
+                <img class="weatherIcon4" src="" alt="Weather icon" width="50%">
+                <p id="temp4"></p>
+                <p id="wind4"></p>
+                <p id="humidity4"></p>
             </div>
         </div>
     </main>
     <div class="hidden" id="error">
         <h3 id="errorMsg"> </h3>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./Assets/js/script.js"></script>
 </body>

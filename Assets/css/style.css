@@ -149,11 +149,16 @@ li {
 button {
     width: 60%;
     height: 100%;
-
+    border-radius: 5px;
 }
 
 
 .card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
     border: 1px solid black;
     width: 15%;
     height: 80%;
@@ -164,6 +169,16 @@ button {
     )
 }
 
+.card img {
+    margin: 0 auto;
+}
+
+.dates {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
 #title {
     font-size: 30px;
     font-weight: 600;
@@ -172,6 +187,25 @@ button {
 
 }
 
-.linear-gradient-background {
-    
-    }
+.low {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.moderate {
+    background-color: lightblue;
+}
+
+.high {
+    background-color: white;
+}
+
+.veryHigh {
+    color: white;
+    background-color: orange;
+}
+
+.extreme {
+    color: white;
+    background-color: orangered;
+}
