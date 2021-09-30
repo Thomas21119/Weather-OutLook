@@ -29,7 +29,7 @@ function addSearch() {
     cityBtn.on('click', getUvPastSearch)
 }
 
-
+// on click
 var searchBtn = $('#search')
 searchBtn.on('click', getWeather)
 searchBtn.on('click', fiveDayOnSearchForecast)

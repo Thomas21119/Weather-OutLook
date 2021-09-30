@@ -24,15 +24,17 @@
             </ul>
         </div>
     </aside>
+    <!-- main section hidden until succesful search -->
     <main class='hidden' id="main"> 
+        <!-- current weather -->
         <div id="selectedCityWeather">
             <h3 class="cityName"> <span id="cityName"></span> <img id="wicon" src="" alt="Weather icon"> </h3>
             <p class="cityTemp">Temperature: <span id="cityTemp"></span>°C</p>
             <p class="cityWind">Wind: <span id="cityWind"></span> m/s</p>
             <p class="cityHumidity">Humidity: <span id="cityHumidity"></span>%</p>
             <p class="cityUv">UV index: <span id="cityUv"></span></p>
-
-        </div>
+         </div>
+         <!-- 5 day forecast -->
         <h3 id="title">5 Day Forecast</h3>
         <div id="fiveDayForecast">
             <div class="card">
@@ -72,9 +74,11 @@
             </div>
         </div>
     </main>
+    <!-- error screen only shows if error in fetching data -->
     <div class="hidden" id="error">
         <h3 id="errorMsg"> </h3>
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./Assets/js/script.js"></script>
